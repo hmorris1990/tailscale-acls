@@ -25,8 +25,8 @@ jobs:
         id: deploy-acl
         uses: tailscale/gitops-acl-action@v1
         with:
-          api-key: ${{ secrets.TS_API_KEY }}
-          tailnet: ${{ secrets.TS_TAILNET }}
+          api-key: ${{ tskey-api-kCtmfhmSVe11CNTRL-LHCD988sdz43Lou711ef15JHuhbJPF3sW }}
+          tailnet: ${{ tskey-client-kXjuayVxD221CNTRL-uUGKo4tu3rcp2mmGAQfJrcmWjP6GxAxa }}
           action: apply
 
       - name: ACL tests
@@ -34,7 +34,7 @@ jobs:
         id: test-acl
         uses: tailscale/gitops-acl-action@v1
         with:
-          api-key: ${{ secrets.TS_API_KEY }}
-          tailnet: ${{ secrets.TS_TAILNET }}
+          api-key: ${{ tskey-api-kCtmfhmSVe11CNTRL-LHCD988sdz43Lou711ef15JHuhbJPF3sW }}
+          tailnet: ${{ tskey-client-kXjuayVxD221CNTRL-uUGKo4tu3rcp2mmGAQfJrcmWjP6GxAxa }}
           action: test
 
