@@ -25,7 +25,7 @@ jobs:
         id: deploy-acl
         uses: tailscale/gitops-acl-action@v1
         with:
-          api-key: ${{ tskey-api-kCtmfhmSVe11CNTRL-LHCD988sdz43Lou711ef15JHuhbJPF3sW }}
+          api-key: ${{ kCtmfhmSVe11CNTRL-LHCD988sdz43Lou711ef15JHuhbJPF3sW }}
           tailnet: ${{ hmorris1990.github }}
           action: apply
 
@@ -34,7 +34,7 @@ jobs:
         id: test-acl
         uses: tailscale/gitops-acl-action@v1
         with:
-          api-key: ${{ tskey-api-kCtmfhmSVe11CNTRL-LHCD988sdz43Lou711ef15JHuhbJPF3sW }}
+          api-key: ${{ kCtmfhmSVe11CNTRL-LHCD988sdz43Lou711ef15JHuhbJPF3sW }}
           tailnet: ${{ hmorris1990.github }}
           action: test
 
