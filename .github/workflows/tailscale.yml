@@ -26,7 +26,7 @@ jobs:
         uses: tailscale/gitops-acl-action@v1
         with:
           api-key: ${{ secrets.tskey-api-kCtmfhmSVe11CNTRL-LHCD988sdz43Lou711ef15JHuhbJPF3sW }}
-          tailnet: ${{ hmorris1990.github }}
+          tailnet: ${{ secrets.hmorris1990.github }}
           action: apply
 
       - name: ACL tests
@@ -35,6 +35,6 @@ jobs:
         uses: tailscale/gitops-acl-action@v1
         with:
           api-key: ${{ secrets.tskey-api-kCtmfhmSVe11CNTRL-LHCD988sdz43Lou711ef15JHuhbJPF3sW }}
-          tailnet: ${{ hmorris1990.github }}
+          tailnet: ${{ secrets.hmorris1990.github }}
           action: test
 
